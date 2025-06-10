@@ -70,7 +70,7 @@ const ROUTES = [
   },
 ];
 
-export const clientLoader = async () => {
+export const loader = async () => {
   return;
 };
 
