@@ -15,7 +15,9 @@ export default function ServerDocument() {
         will render the error below. Check the page source to verify.
       </Typography>
       <pre className="bg-neutral-800 text-white p-4 rounded-md">
-        ReferenceError: document is not defined at ServerDocument
+      Oops!
+
+An unexpected error occurred.
       </pre>
       <Typography>
         {" "}

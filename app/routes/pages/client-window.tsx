@@ -12,7 +12,11 @@ export const clientLoader = async () => {
     message,
   };
 };
-
+export function HydrateFallback() {
+  return <div className="flex flex-col gap-4">
+      <pre className="bg-neutral-800 text-white p-4 rounded-md">Loading...</pre>
+  </div>
+}
 export default function ClientWindow({ loaderData }: Route.ComponentProps) {
   const location = window.location;
   return (
