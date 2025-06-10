@@ -1,14 +1,13 @@
 import { ClientContent } from "~/components/client-content";
 
-import type { Route } from "./+types/client-mui-material";
 import { Typography, Button, TextField } from "@mui/material";
+import { useIsHydrated } from "~/use-is-hydrated";
 
-export const clientLoader = async () => {
-  return;
-};
-export default function ClientMuiMaterial({
-  loaderData,
-}: Route.ComponentProps) {
+export default function ClientMuiMaterial() {
+  const { isHydrated } = useIsHydrated();
+  if (!isHydrated) {
+    return <p>Loading...</p>;
+  }
   return (
     <ClientContent>
       <Typography>Hello, world!</Typography>

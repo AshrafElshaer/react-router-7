@@ -2,12 +2,16 @@ import { ClientContent } from "~/components/client-content";
 import { sleep } from "~/sleep";
 import type { Route } from "./+types/client-window";
 import { Stack, Typography } from "@mui/material";
+import { useEffect } from "react";
+import { useIsHydrated } from "~/use-is-hydrated";
 
 export const clientLoader = async () => {
+  await sleep(1000, "Loading data...");
   return {
     message: "This is a message from the client",
   };
 };
+clientLoader.hydrate = true;
 export function HydrateFallback() {
   return (
     <div className="flex flex-col gap-4">
@@ -17,6 +21,7 @@ export function HydrateFallback() {
 }
 export default function ClientWindow({ loaderData }: Route.ComponentProps) {
   const location = window.location;
+
   return (
     <ClientContent>
       <Stack gap={2}>

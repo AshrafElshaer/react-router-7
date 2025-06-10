@@ -1,11 +1,12 @@
 import { Stack, Typography } from "@mui/material";
 import { ClientContent } from "~/components/client-content";
-
-export const clientLoader = async () => {
-  return;
-};
+import { useIsHydrated } from "~/use-is-hydrated";
 
 export default function ClientDocument() {
+  const { isHydrated } = useIsHydrated();
+  if (!isHydrated) {
+    return <p>Loading...</p>;
+  }
   const element = document.querySelector("#client-document-link");
 
   return (

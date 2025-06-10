@@ -11,14 +11,6 @@ export const loader = async () => {
   };
 };
 
-export const HydrateFallback = () => {
-  return (
-    <div className="flex flex-col gap-4">
-      <pre className="bg-neutral-800 text-white p-4 rounded-md">Loading...</pre>
-    </div>
-  );
-};
-
 export default function ServerClient({ loaderData }: Route.ComponentProps) {
   return (
     <div className="flex flex-col gap-4">

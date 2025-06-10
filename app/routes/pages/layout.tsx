@@ -68,6 +68,10 @@ const ROUTES = [
     label: "Server & Suspense",
     path: "/dashboard/server-suspense",
   },
+  {
+    label: "Client & Suspense",
+    path: "/dashboard/client-suspense",
+  },
 ];
 
 export const loader = async () => {

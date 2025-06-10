@@ -1,14 +1,13 @@
 import { Typography } from "@mui/material";
-import { Breadcrumbs, BreadcrumbsItem } from "react-breadcrumbs-dynamic";
+import { BreadcrumbsItem } from "react-breadcrumbs-dynamic";
 import { ClientContent } from "~/components/client-content";
-
-export const clientLoader = async () => {
-  return {
-    message: "Hello, world!",
-  };
-};
+import { useIsHydrated } from "~/use-is-hydrated";
 
 export default function ClientBreadcrumbsNonMui() {
+  const { isHydrated } = useIsHydrated();
+  if (!isHydrated) {
+    return <p>Loading...</p>;
+  }
   return (
     <ClientContent>
       <BreadcrumbsItem to="/">Home</BreadcrumbsItem>

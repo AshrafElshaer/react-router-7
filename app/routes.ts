@@ -48,5 +48,6 @@ export default [
       "routes/pages/client-breadcrumbs-mui.tsx"
     ),
     route("/dashboard/server-suspense", "routes/pages/server-suspense.tsx"),
+    route("/dashboard/client-suspense", "routes/pages/client-suspense.tsx"),
   ]),
 ] satisfies RouteConfig;
