@@ -1,7 +1,7 @@
-import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { Link } from "react-router";
+import { Button } from "@mui/material";
 
-export function meta({}: Route.MetaArgs) {
+export function meta() {
   return [
     { title: "New React Router App" },
     { name: "description", content: "Welcome to React Router!" },
@@ -9,5 +9,13 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <div className="h-screen w-screen flex items-center justify-center">
+      <Link to="/dashboard">
+        <Button variant="contained" color="primary">
+          Go to Dashboard
+        </Button>
+      </Link>
+    </div>
+  );
 }
