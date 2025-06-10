@@ -1,0 +1,177 @@
+{
+  "buildManifest": {
+    "serverBundles": {
+      "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0": {
+        "id": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+        "file": "build/server/nodejs_eyJydW50aW1lIjoibm9kZWpzIn0/index.js",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    },
+    "routeIdToServerBundleId": {
+      "routes/home": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/pages/server-only": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/pages/client-only": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/pages/server-document": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/pages/client-document": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/pages/server-window": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/pages/client-window": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0"
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "app/root.tsx",
+        "config": {}
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "root",
+        "file": "app/routes/home.tsx",
+        "index": true,
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/pages/layout": {
+        "id": "routes/pages/layout",
+        "parentId": "root",
+        "file": "app/routes/pages/layout.tsx",
+        "config": {}
+      },
+      "routes/pages/server-only": {
+        "id": "routes/pages/server-only",
+        "parentId": "routes/pages/layout",
+        "file": "app/routes/pages/server-only.tsx",
+        "path": "/dashboard",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/pages/client-only": {
+        "id": "routes/pages/client-only",
+        "parentId": "routes/pages/layout",
+        "file": "app/routes/pages/client-only.tsx",
+        "path": "/dashboard/client",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/pages/server-document": {
+        "id": "routes/pages/server-document",
+        "parentId": "routes/pages/layout",
+        "file": "app/routes/pages/server-document.tsx",
+        "path": "/dashboard/server-document",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/pages/client-document": {
+        "id": "routes/pages/client-document",
+        "parentId": "routes/pages/layout",
+        "file": "app/routes/pages/client-document.tsx",
+        "path": "/dashboard/client-document",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/pages/server-window": {
+        "id": "routes/pages/server-window",
+        "parentId": "routes/pages/layout",
+        "file": "app/routes/pages/server-window.tsx",
+        "path": "/dashboard/server-window",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/pages/client-window": {
+        "id": "routes/pages/client-window",
+        "parentId": "routes/pages/layout",
+        "file": "app/routes/pages/client-window.tsx",
+        "path": "/dashboard/client-window",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    }
+  },
+  "reactRouterConfig": {
+    "appDirectory": "/Users/ashrafelshaer/Desktop/developer/my-react-router-app/app",
+    "basename": "/",
+    "buildDirectory": "/Users/ashrafelshaer/Desktop/developer/my-react-router-app/build",
+    "future": {
+      "unstable_middleware": false,
+      "unstable_optimizeDeps": false,
+      "unstable_splitRouteModules": false,
+      "unstable_subResourceIntegrity": false,
+      "unstable_viteEnvironmentApi": false
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "root.tsx"
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "root",
+        "file": "routes/home.tsx",
+        "index": true
+      },
+      "routes/pages/layout": {
+        "id": "routes/pages/layout",
+        "parentId": "root",
+        "file": "routes/pages/layout.tsx"
+      },
+      "routes/pages/server-only": {
+        "id": "routes/pages/server-only",
+        "parentId": "routes/pages/layout",
+        "file": "routes/pages/server-only.tsx",
+        "path": "/dashboard"
+      },
+      "routes/pages/client-only": {
+        "id": "routes/pages/client-only",
+        "parentId": "routes/pages/layout",
+        "file": "routes/pages/client-only.tsx",
+        "path": "/dashboard/client"
+      },
+      "routes/pages/server-document": {
+        "id": "routes/pages/server-document",
+        "parentId": "routes/pages/layout",
+        "file": "routes/pages/server-document.tsx",
+        "path": "/dashboard/server-document"
+      },
+      "routes/pages/client-document": {
+        "id": "routes/pages/client-document",
+        "parentId": "routes/pages/layout",
+        "file": "routes/pages/client-document.tsx",
+        "path": "/dashboard/client-document"
+      },
+      "routes/pages/server-window": {
+        "id": "routes/pages/server-window",
+        "parentId": "routes/pages/layout",
+        "file": "routes/pages/server-window.tsx",
+        "path": "/dashboard/server-window"
+      },
+      "routes/pages/client-window": {
+        "id": "routes/pages/client-window",
+        "parentId": "routes/pages/layout",
+        "file": "routes/pages/client-window.tsx",
+        "path": "/dashboard/client-window"
+      }
+    },
+    "routeDiscovery": {
+      "mode": "lazy",
+      "manifestPath": "/__manifest"
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": true
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}
