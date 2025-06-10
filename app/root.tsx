@@ -11,6 +11,7 @@ import type { Route } from "./+types/root";
 import "./app.css";
 import { AuthProvider } from "./auth-context";
 import ThemeProvider from "./theme";
+import { BreadcrumbsProvider } from "react-breadcrumbs-dynamic";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -36,7 +37,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <ThemeProvider>
-          <AuthProvider>{children}</AuthProvider>
+          <AuthProvider>
+            <BreadcrumbsProvider>
+              {children}
+            </BreadcrumbsProvider>
+          </AuthProvider>
         </ThemeProvider>
         <ScrollRestoration />
         <Scripts />

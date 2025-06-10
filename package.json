@@ -18,6 +18,7 @@
     "@vercel/react-router": "^1.1.2",
     "isbot": "^5.1.27",
     "react": "^19.1.0",
+    "react-breadcrumbs-dynamic": "1.2.1",
     "react-dom": "^19.1.0",
     "react-router": "^7.5.3"
   },
@@ -26,6 +27,7 @@
     "@tailwindcss/vite": "^4.1.4",
     "@types/node": "^20",
     "@types/react": "^19.1.2",
+    "@types/react-breadcrumbs-dynamic": "^1.0.7",
     "@types/react-dom": "^19.1.2",
     "tailwindcss": "^4.1.4",
     "typescript": "^5.8.3",
