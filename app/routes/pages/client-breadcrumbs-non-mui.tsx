@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import { Breadcrumbs ,BreadcrumbsItem} from "react-breadcrumbs-dynamic";
+import { Breadcrumbs, BreadcrumbsItem } from "react-breadcrumbs-dynamic";
 import { ClientContent } from "~/components/client-content";
 
 export const clientLoader = async () => {
@@ -9,11 +9,15 @@ export const clientLoader = async () => {
 };
 
 export default function ClientBreadcrumbsNonMui() {
-  return <ClientContent>
+  return (
+    <ClientContent>
       <BreadcrumbsItem to="/">Home</BreadcrumbsItem>
-      <BreadcrumbsItem to="/dashboard/client-breadcrumbs-non-mui">Dashboard</BreadcrumbsItem>
-    {/* <Breadcrumbs separator="›" aria-label="breadcrumb">
+      <BreadcrumbsItem to="/dashboard/client-breadcrumbs-non-mui">
+        Dashboard
+      </BreadcrumbsItem>
+      {/* <Breadcrumbs separator="›" aria-label="breadcrumb">
     </Breadcrumbs>  */}
-    <Typography>Hello, world!</Typography>
-  </ClientContent>;
+      <Typography>Hello, world!</Typography>
+    </ClientContent>
+  );
 }

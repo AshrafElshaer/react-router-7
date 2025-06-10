@@ -2,7 +2,7 @@ import { Stack, Typography } from "@mui/material";
 import { ClientContent } from "~/components/client-content";
 
 export const clientLoader = async () => {
-  return 
+  return;
 };
 
 export default function ClientDocument() {

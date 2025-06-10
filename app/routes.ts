@@ -15,14 +15,38 @@ export default [
     route("/dashboard/server-window", "routes/pages/server-window.tsx"),
     route("/dashboard/client-window", "routes/pages/client-window.tsx"),
     route("/dashboard/server-client", "routes/pages/server-client.tsx"),
-    route("/dashboard/server-material-ui", "routes/pages/server-material-ui.tsx"),
-    route("/dashboard/client-material-ui", "routes/pages/client-material-ui.tsx"),
-    route("/dashboard/server-mui-material", "routes/pages/server-mui-material.tsx"),
-    route("/dashboard/client-mui-material", "routes/pages/client-mui-material.tsx"),
-    route("/dashboard/server-breadcrumbs-non-mui", "routes/pages/server-breadcrumbs-non-mui.tsx"),
-    route("/dashboard/client-breadcrumbs-non-mui", "routes/pages/client-breadcrumbs-non-mui.tsx"),
-    route("/dashboard/server-breadcrumbs-mui", "routes/pages/server-breadcrumbs-mui.tsx"),
-    route("/dashboard/client-breadcrumbs-mui", "routes/pages/client-breadcrumbs-mui.tsx"),
-    route("/dashboard/server-suspense","routes/pages/server-suspense.tsx")
+    route(
+      "/dashboard/server-material-ui",
+      "routes/pages/server-material-ui.tsx"
+    ),
+    route(
+      "/dashboard/client-material-ui",
+      "routes/pages/client-material-ui.tsx"
+    ),
+    route(
+      "/dashboard/server-mui-material",
+      "routes/pages/server-mui-material.tsx"
+    ),
+    route(
+      "/dashboard/client-mui-material",
+      "routes/pages/client-mui-material.tsx"
+    ),
+    route(
+      "/dashboard/server-breadcrumbs-non-mui",
+      "routes/pages/server-breadcrumbs-non-mui.tsx"
+    ),
+    route(
+      "/dashboard/client-breadcrumbs-non-mui",
+      "routes/pages/client-breadcrumbs-non-mui.tsx"
+    ),
+    route(
+      "/dashboard/server-breadcrumbs-mui",
+      "routes/pages/server-breadcrumbs-mui.tsx"
+    ),
+    route(
+      "/dashboard/client-breadcrumbs-mui",
+      "routes/pages/client-breadcrumbs-mui.tsx"
+    ),
+    route("/dashboard/server-suspense", "routes/pages/server-suspense.tsx"),
   ]),
 ] satisfies RouteConfig;

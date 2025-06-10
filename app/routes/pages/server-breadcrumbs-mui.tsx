@@ -10,18 +10,19 @@ export const loader = async () => {
   };
 };
 
-export default function ServerBreadcrumbsMui({loaderData}: Route.ComponentProps) {
-  return <ServerContent><pre className="bg-neutral-800 text-white p-4 rounded-md">{JSON.stringify(loaderData, null, 2)}</pre>
-  <Typography sx={{ color: 'text.primary' }}>Breadcrumbs</Typography>
-    <Breadcrumbs aria-label="breadcrumb" >
-  <Link to="/">
-    MUI
-  </Link>
-  <Link
-    to="/material-ui/getting-started/installation/"
-  >
-    Core
-  </Link>
-</Breadcrumbs>
-  </ServerContent>;
+export default function ServerBreadcrumbsMui({
+  loaderData,
+}: Route.ComponentProps) {
+  return (
+    <ServerContent>
+      <pre className="bg-neutral-800 text-white p-4 rounded-md">
+        {JSON.stringify(loaderData, null, 2)}
+      </pre>
+      <Typography sx={{ color: "text.primary" }}>Breadcrumbs</Typography>
+      <Breadcrumbs aria-label="breadcrumb">
+        <Link to="/">MUI</Link>
+        <Link to="/material-ui/getting-started/installation/">Core</Link>
+      </Breadcrumbs>
+    </ServerContent>
+  );
 }

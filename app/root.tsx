@@ -38,9 +38,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         <ThemeProvider>
           <AuthProvider>
-            <BreadcrumbsProvider>
-              {children}
-            </BreadcrumbsProvider>
+            <BreadcrumbsProvider>{children}</BreadcrumbsProvider>
           </AuthProvider>
         </ThemeProvider>
         <ScrollRestoration />

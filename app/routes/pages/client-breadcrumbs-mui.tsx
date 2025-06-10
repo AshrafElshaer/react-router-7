@@ -9,17 +9,13 @@ export const clientLoader = async () => {
 };
 
 export default function ClientBreadcrumbsMui() {
-  return <ClientContent>
-     <Typography sx={{ color: 'text.primary' }}>Breadcrumbs</Typography>
-    <Breadcrumbs aria-label="breadcrumb" >
-  <Link to="/">
-    MUI
-  </Link>
-  <Link
-    to="/material-ui/getting-started/installation/"
-  >
-    Core
-  </Link>
-</Breadcrumbs>
-  </ClientContent>;
+  return (
+    <ClientContent>
+      <Typography sx={{ color: "text.primary" }}>Breadcrumbs</Typography>
+      <Breadcrumbs aria-label="breadcrumb">
+        <Link to="/">MUI</Link>
+        <Link to="/material-ui/getting-started/installation/">Core</Link>
+      </Breadcrumbs>
+    </ClientContent>
+  );
 }

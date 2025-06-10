@@ -4,15 +4,16 @@ import type { Route } from "./+types/client-window";
 import { Stack, Typography } from "@mui/material";
 
 export const clientLoader = async () => {
- 
   return {
-    message : "This is a message from the client"
+    message: "This is a message from the client",
   };
 };
 export function HydrateFallback() {
-  return <div className="flex flex-col gap-4">
+  return (
+    <div className="flex flex-col gap-4">
       <pre className="bg-neutral-800 text-white p-4 rounded-md">Loading...</pre>
-  </div>
+    </div>
+  );
 }
 export default function ClientWindow({ loaderData }: Route.ComponentProps) {
   const location = window.location;
