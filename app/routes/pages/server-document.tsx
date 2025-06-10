@@ -1,6 +1,8 @@
 import { Stack, Typography } from "@mui/material";
+import { sleep } from "~/sleep";
 
 export const loader = async () => {
+  await sleep(1000, "Loading data...");
   return {
     message: "Hello, world!",
   };

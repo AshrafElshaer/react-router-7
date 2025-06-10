@@ -4,12 +4,9 @@ import type { Route } from "./+types/client-window";
 import { Stack, Typography } from "@mui/material";
 
 export const clientLoader = async () => {
-  const message: string = await sleep(
-    1000,
-    "This is a message from the client"
-  );
+ 
   return {
-    message,
+    message : "This is a message from the client"
   };
 };
 export function HydrateFallback() {
