@@ -12,6 +12,8 @@ import "./app.css";
 import { AuthProvider } from "./auth-context";
 import ThemeProvider from "./theme";
 import { BreadcrumbsProvider } from "react-breadcrumbs-dynamic";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -38,7 +40,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         <ThemeProvider>
           <AuthProvider>
-            <BreadcrumbsProvider>{children}</BreadcrumbsProvider>
+            <BreadcrumbsProvider>
+              <Provider store={store}>{children}</Provider>
+            </BreadcrumbsProvider>
           </AuthProvider>
         </ThemeProvider>
         <ScrollRestoration />

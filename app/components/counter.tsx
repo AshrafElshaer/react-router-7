@@ -1,14 +1,17 @@
-import { useState } from "react";
 import { Button } from "@mui/material";
+import { useSelector, useDispatch } from "react-redux";
+import { decrement, increment } from "../redux/counter-slice";
+import type { RootState } from "~/redux/store";
 
 export default function Counter() {
-  const [count, setCount] = useState(0);
+  const count = useSelector((state: RootState) => state.counter.value);
+  const dispatch = useDispatch();
 
   return (
     <div>
       <p>Count: {count}</p>
-      <Button onClick={() => setCount((count) => count + 1)}>Increment</Button>
-      <Button onClick={() => setCount((count) => count - 1)}>Decrement</Button>
+      <Button onClick={() => dispatch(increment())}>Increment</Button>
+      <Button onClick={() => dispatch(decrement())}>Decrement</Button>
     </div>
   );
 }
