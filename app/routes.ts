@@ -49,5 +49,6 @@ export default [
     ),
     route("/dashboard/server-suspense", "routes/pages/server-suspense.tsx"),
     route("/dashboard/client-suspense", "routes/pages/client-suspense.tsx"),
+      route("/dashboard/client-light-gallary", "routes/pages/client-light-gallary.tsx"),
   ]),
 ] satisfies RouteConfig;

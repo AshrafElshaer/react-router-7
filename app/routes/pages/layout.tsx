@@ -72,6 +72,10 @@ const ROUTES = [
     label: "Client & Suspense",
     path: "/dashboard/client-suspense",
   },
+  {
+    label: "Client Light Gallary",
+    path: "/dashboard/client-light-gallary",
+  },
 ];
 
 export const loader = async () => {
