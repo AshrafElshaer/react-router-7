@@ -16,7 +16,19 @@
       "routes/pages/server-document": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
       "routes/pages/client-document": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
       "routes/pages/server-window": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
-      "routes/pages/client-window": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0"
+      "routes/pages/client-window": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/pages/server-client": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/pages/server-material-ui": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/pages/client-material-ui": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/pages/server-mui-material": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/pages/client-mui-material": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/pages/server-breadcrumbs-non-mui": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/pages/client-breadcrumbs-non-mui": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/pages/server-breadcrumbs-mui": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/pages/client-breadcrumbs-mui": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/pages/server-suspense": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/pages/client-suspense": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/pages/client-light-gallary": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0"
     },
     "routes": {
       "root": {
@@ -93,6 +105,114 @@
         "config": {
           "runtime": "nodejs"
         }
+      },
+      "routes/pages/server-client": {
+        "id": "routes/pages/server-client",
+        "parentId": "routes/pages/layout",
+        "file": "app/routes/pages/server-client.tsx",
+        "path": "/dashboard/server-client",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/pages/server-material-ui": {
+        "id": "routes/pages/server-material-ui",
+        "parentId": "routes/pages/layout",
+        "file": "app/routes/pages/server-material-ui.tsx",
+        "path": "/dashboard/server-material-ui",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/pages/client-material-ui": {
+        "id": "routes/pages/client-material-ui",
+        "parentId": "routes/pages/layout",
+        "file": "app/routes/pages/client-material-ui.tsx",
+        "path": "/dashboard/client-material-ui",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/pages/server-mui-material": {
+        "id": "routes/pages/server-mui-material",
+        "parentId": "routes/pages/layout",
+        "file": "app/routes/pages/server-mui-material.tsx",
+        "path": "/dashboard/server-mui-material",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/pages/client-mui-material": {
+        "id": "routes/pages/client-mui-material",
+        "parentId": "routes/pages/layout",
+        "file": "app/routes/pages/client-mui-material.tsx",
+        "path": "/dashboard/client-mui-material",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/pages/server-breadcrumbs-non-mui": {
+        "id": "routes/pages/server-breadcrumbs-non-mui",
+        "parentId": "routes/pages/layout",
+        "file": "app/routes/pages/server-breadcrumbs-non-mui.tsx",
+        "path": "/dashboard/server-breadcrumbs-non-mui",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/pages/client-breadcrumbs-non-mui": {
+        "id": "routes/pages/client-breadcrumbs-non-mui",
+        "parentId": "routes/pages/layout",
+        "file": "app/routes/pages/client-breadcrumbs-non-mui.tsx",
+        "path": "/dashboard/client-breadcrumbs-non-mui",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/pages/server-breadcrumbs-mui": {
+        "id": "routes/pages/server-breadcrumbs-mui",
+        "parentId": "routes/pages/layout",
+        "file": "app/routes/pages/server-breadcrumbs-mui.tsx",
+        "path": "/dashboard/server-breadcrumbs-mui",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/pages/client-breadcrumbs-mui": {
+        "id": "routes/pages/client-breadcrumbs-mui",
+        "parentId": "routes/pages/layout",
+        "file": "app/routes/pages/client-breadcrumbs-mui.tsx",
+        "path": "/dashboard/client-breadcrumbs-mui",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/pages/server-suspense": {
+        "id": "routes/pages/server-suspense",
+        "parentId": "routes/pages/layout",
+        "file": "app/routes/pages/server-suspense.tsx",
+        "path": "/dashboard/server-suspense",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/pages/client-suspense": {
+        "id": "routes/pages/client-suspense",
+        "parentId": "routes/pages/layout",
+        "file": "app/routes/pages/client-suspense.tsx",
+        "path": "/dashboard/client-suspense",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/pages/client-light-gallary": {
+        "id": "routes/pages/client-light-gallary",
+        "parentId": "routes/pages/layout",
+        "file": "app/routes/pages/client-light-gallary.tsx",
+        "path": "/dashboard/client-light-gallary",
+        "config": {
+          "runtime": "nodejs"
+        }
       }
     }
   },
@@ -159,6 +279,78 @@
         "parentId": "routes/pages/layout",
         "file": "routes/pages/client-window.tsx",
         "path": "/dashboard/client-window"
+      },
+      "routes/pages/server-client": {
+        "id": "routes/pages/server-client",
+        "parentId": "routes/pages/layout",
+        "file": "routes/pages/server-client.tsx",
+        "path": "/dashboard/server-client"
+      },
+      "routes/pages/server-material-ui": {
+        "id": "routes/pages/server-material-ui",
+        "parentId": "routes/pages/layout",
+        "file": "routes/pages/server-material-ui.tsx",
+        "path": "/dashboard/server-material-ui"
+      },
+      "routes/pages/client-material-ui": {
+        "id": "routes/pages/client-material-ui",
+        "parentId": "routes/pages/layout",
+        "file": "routes/pages/client-material-ui.tsx",
+        "path": "/dashboard/client-material-ui"
+      },
+      "routes/pages/server-mui-material": {
+        "id": "routes/pages/server-mui-material",
+        "parentId": "routes/pages/layout",
+        "file": "routes/pages/server-mui-material.tsx",
+        "path": "/dashboard/server-mui-material"
+      },
+      "routes/pages/client-mui-material": {
+        "id": "routes/pages/client-mui-material",
+        "parentId": "routes/pages/layout",
+        "file": "routes/pages/client-mui-material.tsx",
+        "path": "/dashboard/client-mui-material"
+      },
+      "routes/pages/server-breadcrumbs-non-mui": {
+        "id": "routes/pages/server-breadcrumbs-non-mui",
+        "parentId": "routes/pages/layout",
+        "file": "routes/pages/server-breadcrumbs-non-mui.tsx",
+        "path": "/dashboard/server-breadcrumbs-non-mui"
+      },
+      "routes/pages/client-breadcrumbs-non-mui": {
+        "id": "routes/pages/client-breadcrumbs-non-mui",
+        "parentId": "routes/pages/layout",
+        "file": "routes/pages/client-breadcrumbs-non-mui.tsx",
+        "path": "/dashboard/client-breadcrumbs-non-mui"
+      },
+      "routes/pages/server-breadcrumbs-mui": {
+        "id": "routes/pages/server-breadcrumbs-mui",
+        "parentId": "routes/pages/layout",
+        "file": "routes/pages/server-breadcrumbs-mui.tsx",
+        "path": "/dashboard/server-breadcrumbs-mui"
+      },
+      "routes/pages/client-breadcrumbs-mui": {
+        "id": "routes/pages/client-breadcrumbs-mui",
+        "parentId": "routes/pages/layout",
+        "file": "routes/pages/client-breadcrumbs-mui.tsx",
+        "path": "/dashboard/client-breadcrumbs-mui"
+      },
+      "routes/pages/server-suspense": {
+        "id": "routes/pages/server-suspense",
+        "parentId": "routes/pages/layout",
+        "file": "routes/pages/server-suspense.tsx",
+        "path": "/dashboard/server-suspense"
+      },
+      "routes/pages/client-suspense": {
+        "id": "routes/pages/client-suspense",
+        "parentId": "routes/pages/layout",
+        "file": "routes/pages/client-suspense.tsx",
+        "path": "/dashboard/client-suspense"
+      },
+      "routes/pages/client-light-gallary": {
+        "id": "routes/pages/client-light-gallary",
+        "parentId": "routes/pages/layout",
+        "file": "routes/pages/client-light-gallary.tsx",
+        "path": "/dashboard/client-light-gallary"
       }
     },
     "routeDiscovery": {
