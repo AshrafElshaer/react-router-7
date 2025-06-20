@@ -1,6 +1,7 @@
 import { NavLink, Outlet } from "react-router";
 import { Button, CircularProgress, Divider, Typography } from "@mui/material";
 import { ThemeSelector } from "~/theme";
+import "lightgallery.js/dist/css/lightgallery.css";
 
 const ROUTES = [
   {
