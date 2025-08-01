@@ -1,9 +1,10 @@
 import { useGetProductQuery, productApi } from "../../redux/productApi";
 import htmlParse from "html-react-parser";
+import { store } from "../../redux/store";
 
 export const loader = async () => {
-  productApi.endpoints.getProduct.initiate();
-  return 
+  const state = await store.dispatch(productApi.endpoints.getProduct.initiate());
+  return { state };
 };
 
 export default function RtkQuery() {
