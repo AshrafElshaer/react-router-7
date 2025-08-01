@@ -8,9 +8,7 @@ export const loader = async () => {
 };
 
 export default function RtkQuery() {
-  const { data } = useGetProductQuery("6607", {
-    skip: false,
-  });
+  const { data } = useGetProductQuery("6607");
   return (
     <div>
       {data && <h2>{data.productName}</h2>}
