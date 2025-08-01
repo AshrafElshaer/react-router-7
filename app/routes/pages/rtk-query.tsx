@@ -3,11 +3,13 @@ import htmlParse from "html-react-parser";
 
 export const loader = async () => {
   productApi.endpoints.getProduct.initiate();
-  return;
+  return 
 };
 
 export default function RtkQuery() {
-  const { data } = useGetProductQuery();
+  const { data } = useGetProductQuery(undefined, {
+    skip: false,
+  });
   return (
     <div>
       {data && <h2>{data.productName}</h2>}
