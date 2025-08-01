@@ -3,12 +3,12 @@ import htmlParse from "html-react-parser";
 import { store } from "../../redux/store";
 
 export const loader = async () => {
-  const state = await store.dispatch(productApi.endpoints.getProduct.initiate());
-  return { state };
+  await store.dispatch(productApi.endpoints.getProduct.initiate("6607"));
+  return 
 };
 
 export default function RtkQuery() {
-  const { data } = useGetProductQuery(undefined, {
+  const { data } = useGetProductQuery("6607", {
     skip: false,
   });
   return (

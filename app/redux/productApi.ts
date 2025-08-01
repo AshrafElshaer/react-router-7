@@ -16,8 +16,8 @@ export const productApi = createApi({
     baseUrl: "https://dev-webstore.aether-stores.io/public/api/v1/",
   }),
   endpoints: (builder) => ({
-    getProduct: builder.query<any, void>({ 
-      query: () => "front/products/6607",
+    getProduct: builder.query<any, string>({ 
+      query: (id) => `front/products/${id}`,
     }),
   }),
 });
