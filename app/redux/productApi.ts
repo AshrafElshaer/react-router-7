@@ -7,7 +7,7 @@ import {
 
 const createApi = buildCreateApi(
   coreModule(),
-  reactHooksModule({ unstable__sideEffectsInRender: true }) // Change this to false for SSR
+  reactHooksModule({ unstable__sideEffectsInRender: true })
 );
 
 export const productApi = createApi({
