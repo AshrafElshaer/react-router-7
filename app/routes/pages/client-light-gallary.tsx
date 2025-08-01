@@ -2,6 +2,7 @@ import { Typography } from "@mui/material";
 import { LightgalleryProvider, LightgalleryItem } from "react-lightgallery";
 
 
+
 export const clientLoader = async () => {
   return {
     images: [
@@ -14,13 +15,21 @@ export const clientLoader = async () => {
   };
 };
 
-export default function ServerLightGallary({ loaderData }: { loaderData: { images: string[] } }) {
+export default function ClientLightGallary({ loaderData }: { loaderData: { images: string[] } }) {
 
   
   return (
     <div>
       <Typography variant="h3">Multiple Images</Typography>
       <LightgalleryProvider
+      onAfterOpen={() => {
+        const lightGallery = document.querySelector(".lg-img-wrap");
+        console.log(lightGallery);
+      }}
+      onBeforeOpen={() => {
+        console.log("before open");
+      }}
+
       className="grid grid-cols-3 gap-4"
       >
         <div className="grid grid-cols-3 gap-4">

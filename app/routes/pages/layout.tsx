@@ -77,6 +77,10 @@ const ROUTES = [
     label: "Client Light Gallary",
     path: "/dashboard/client-light-gallary",
   },
+  {
+    label: "RTK Query",
+    path: "/dashboard/rtk-query",
+  },
 ];
 
 export const loader = async () => {
